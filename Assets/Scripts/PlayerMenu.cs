@@ -7,7 +7,9 @@ public class PlayerMenu : MonoBehaviour {
 
     public GameObject CharacterMenu;
     public CharacterManager playerManager;
-    public Text playerMenuStats;
+    public Text playerMenuNationalityStat;
+    public Text playerMenuHealthStat;
+    public Text playerMenuTraumaStat;
     void Start ()
     {
         Debug.Log(playerManager.PlayerNationality);
@@ -20,8 +22,8 @@ public class PlayerMenu : MonoBehaviour {
         {
             CharacterMenu.SetActive(!CharacterMenu.activeInHierarchy);
         }
-        playerMenuStats.text = "Nationality:\n" + playerManager.PlayerNationality
-                               + "\n\n" + "Health:\n" + playerManager.healthStatus + 
-                               "\n\n Injury type:\n" + playerManager.PlayerTrauma;
+        playerMenuNationalityStat.text = "You are " + playerManager.PlayerNationality;
+        playerMenuHealthStat.text = "some text";
+        playerMenuTraumaStat.text = "this text";
     }
 }
