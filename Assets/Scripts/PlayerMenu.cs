@@ -22,8 +22,8 @@ public class PlayerMenu : MonoBehaviour {
         {
             CharacterMenu.SetActive(!CharacterMenu.activeInHierarchy);
         }
-        playerMenuNationalityStat.text = "You are " + playerManager.PlayerNationality;
-        playerMenuHealthStat.text = "some text";
-        playerMenuTraumaStat.text = "this text";
+        playerMenuNationalityStat.text = "" + playerManager.PlayerNationality;
+        playerMenuHealthStat.text = "" + playerManager.healthStatus;
+        playerMenuTraumaStat.text = "" + playerManager.PlayerTrauma;
     }
 }
