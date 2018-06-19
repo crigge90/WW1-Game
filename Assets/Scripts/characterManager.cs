@@ -7,11 +7,16 @@ public class CharacterManager : MonoBehaviour {
 
     public int health;
     public string healthStatus;
-    public enum Nationality {british, french, belgian, german}
-    
+    public enum Nationality {british, french, belgian, german, austrohungarian, italian}
     public enum Trauma {bulletTorso, bulletLeg, bulletArm, shrapnelTorso, shrapnelLeg, shrapnelArm, infectionTorso, infectionLeg, infectionArm}
     Trauma trauma;
-    
+    public Sprite AvatarSoldierBritish;
+    public Sprite AvatarSoldierFrench;
+    public Sprite AvatarSoldierBelgian;
+    public Sprite AvatarSoldierGerman;
+    public Sprite AvatarSoldierAustrohungarian;
+    public Sprite AvatarSoldierItalian;
+
     public Nationality PlayerNationality
     {
         get; set;

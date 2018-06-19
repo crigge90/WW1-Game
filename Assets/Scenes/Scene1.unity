@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -719,10 +719,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterMenu: {fileID: 1752238554}
+  PlayerAvatar: {fileID: 278746695}
   playerManager: {fileID: 1408502681}
   playerMenuNationalityStat: {fileID: 1004994489}
   playerMenuHealthStat: {fileID: 330696161}
   playerMenuTraumaStat: {fileID: 622342439}
+  playerAvatar: {fileID: 0}
 --- !u!4 &576735352
 Transform:
   m_ObjectHideFlags: 0
@@ -1178,6 +1180,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   healthStatus: 
+  AvatarSoldierBritish: {fileID: 21300000, guid: 252864a68ff68f346a845decda74efe9,
+    type: 3}
+  AvatarSoldierFrench: {fileID: 21300000, guid: d3790fbfe81ccfc4a9edbb4542d8c506,
+    type: 3}
+  AvatarSoldierBelgian: {fileID: 21300000, guid: 1760253cb7afb99489148aee7b1ca769,
+    type: 3}
+  AvatarSoldierGerman: {fileID: 21300000, guid: a30a719c754f3284bb5dad84cdf1bd2c,
+    type: 3}
+  AvatarSoldierAustrohungarian: {fileID: 21300000, guid: 9c1ebd607b8ede1478bec73ba9bc3ecf,
+    type: 3}
+  AvatarSoldierItalian: {fileID: 21300000, guid: 90454c4ede20e4e428dd4e79d306330c,
+    type: 3}
 --- !u!4 &1408502682
 Transform:
   m_ObjectHideFlags: 0
@@ -1224,7 +1238,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1016, y: 0}
+  m_SizeDelta: {x: 1188, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &1752238554
 GameObject:
@@ -1236,6 +1250,7 @@ GameObject:
   - component: {fileID: 1752238555}
   - component: {fileID: 1752238558}
   - component: {fileID: 1752238557}
+  - component: {fileID: 1752238556}
   m_Layer: 5
   m_Name: Player Menu Canvas
   m_TagString: Untagged
@@ -1266,8 +1281,35 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 111.48, y: 0}
+  m_SizeDelta: {x: 600, y: 0}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1752238556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752238554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!222 &1752238557
 CanvasRenderer:
   m_ObjectHideFlags: 0
