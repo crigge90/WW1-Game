@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Select : MonoBehaviour {
 
-    public GameObject currentObject = null;
+    public GameObject CurrentObject = null;
 	void Start ()
     {
 		
@@ -21,7 +21,7 @@ public class Select : MonoBehaviour {
             //Debug.Log(cameraHit.collider.gameObject + ": You found me!");
             if (Input.GetMouseButtonUp(0))
             {
-                currentObject = cameraHit.collider.gameObject;
+                CurrentObject = cameraHit.collider.gameObject;
                 Debug.Log(cameraHit.collider.gameObject + ": You clicked me!");
             }
         }

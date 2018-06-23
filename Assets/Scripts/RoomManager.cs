@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject RoomA;
+    public GameObject RoomB;
+    public GameObject RoomC;
+    public GameObject StartingRoom;
+    public GameObject CurrentRoom = null;
+        
+    void Start ()
+    {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	
+	void Update ()
+    {
 		
 	}
 }
