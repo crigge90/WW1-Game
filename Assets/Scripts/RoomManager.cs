@@ -59,13 +59,6 @@ public class RoomManager : MonoBehaviour {
         AddRoom("Night No Mans Land");
 
         SetActiveRoom(rooms["Start"]);
-        
-        
-        // Turning current rooms camero on and all others off
-        if (CurrentRoom == this)
-        {
-            //Some way to access the Room script and its getter and setter
-        }
     }
 
 
