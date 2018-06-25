@@ -7,8 +7,8 @@ public class SceneManager : MonoBehaviour {
      
 	void Start ()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit hit;
     }
 	void Update ()
     {
