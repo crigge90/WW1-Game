@@ -8,9 +8,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dfdd0a0f265b2e48992a15cc3018dd8, type: 3}
-  m_Name: Text_EN
+  m_Script: {fileID: 11500000, guid: 9445b822785201a43a692888c092c4e0, type: 3}
+  m_Name: Text_EN 1
   m_EditorClassIdentifier: 
   collection:
-  - key: Test1
-    value: This is the text that will be retrived by the script!
+  - key: 
+    value: 
+  - key: 
+    value: 
+  - key: 
+    value: 
+  - key: 
+    value: 
+  - key: 
+    value: 

@@ -10,7 +10,7 @@ public class TextCollection
     public string value;
 }
 
-[CreateAssetMenu(fileName = "Text_EN.asset", menuName = "Create Text Asset")]
+[CreateAssetMenu(fileName = "Text_EN.asset", menuName = "Text Asset")]
 public class TextDatabase : ScriptableObject
 {
     [SerializeField]

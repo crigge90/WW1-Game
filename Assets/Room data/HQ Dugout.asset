@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4717ed579595b04e9371273b5f7dfaa, type: 3}
+  m_Name: HQ Dugout
+  m_EditorClassIdentifier: 
+  Name: HQ Dugout
+  background: {fileID: 21300000, guid: 438b8bddcda70cb4f959d30071e06ccf, type: 3}
+  neighbours:
+  - {fileID: 11400000, guid: 00dbb5a7dab86864b9b9891a3d199aa3, type: 2}
+  isStartingRoom: 0

@@ -6,13 +6,18 @@ using UnityEngine.UI;
 public class Room : MonoBehaviour {
 
     [SerializeField]
-    GameObject RoomCamera;
+    Camera RoomCamera;
 
     public GameObject BackgroundCanvas;
     public bool cameraActivation = false;
 	void Start ()
     {
-        RoomCamera.SetActive(cameraActivation);
+        RoomCamera.gameObject.SetActive(cameraActivation);
+    }
+
+    public void BuildRoom (RoomData data)
+    {
+        
     }
     
     public void SetRoomActive(bool state)

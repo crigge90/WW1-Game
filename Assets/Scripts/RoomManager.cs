@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour {
 
+    public RoomData[] Rooms;
     public Room RoomPrefab;
-    public GameObject CurrentRoom = null;
 
     Dictionary<string, Room> rooms = new Dictionary<string, Room>();
 
-    void AddRoom(string name)
+    public void AddRoom(RoomData roomData)
     {
         Room r = GameObject.Instantiate<Room>(RoomPrefab);
+        r.BuildRoom(roomData);
         r.name = name;
         rooms.Add ( name, r );
     }
@@ -28,36 +29,12 @@ public class RoomManager : MonoBehaviour {
    
     void Start ()
     {
-        // Frontline rooms
-        AddRoom("Trench A");
-        AddRoom("Trench B");
-        AddRoom("Trench C");
-        AddRoom("Trench D");
-        AddRoom("HQ Dugout");
-        AddRoom("Machine Gun Nest");
-        AddRoom("Listening Post");
-        AddRoom("No Mans Land");
-
-        // Hospital rooms
-        AddRoom("Room A");
-        AddRoom("Room B");
-        AddRoom("Hallway");
-        AddRoom("Courtyard");
-        AddRoom("Doctors Office");
-        AddRoom("Garden");
-        AddRoom("Operating Theatre");
-        AddRoom("Nurse Quarters");
-
-        // Frontline nightmare rooms
-        AddRoom("Night Trench A");
-        AddRoom("Night Trench B");
-        AddRoom("Night Trench C");
-        AddRoom("NIght Trench D");
-        AddRoom("Night HQ Dugout");
-        AddRoom("Night Machine Gun Nest");
-        AddRoom("Night Listening Post");
-        AddRoom("Night No Mans Land");
-
+        
+        for (int i = 0; i < Rooms.Length; i++)
+        {
+            AddRoom;
+        }
+        
         SetActiveRoom(rooms["Start"]);
     }
 
