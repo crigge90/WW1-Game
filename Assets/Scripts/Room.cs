@@ -8,21 +8,24 @@ public class Room : MonoBehaviour {
     [SerializeField]
     Camera RoomCamera;
 
-    public GameObject BackgroundCanvas;
+    
     public bool cameraActivation = false;
+    public RoomData data;
+
 	void Start ()
     {
-        RoomCamera.gameObject.SetActive(cameraActivation);
+        if (data.isStartingRoom == true)
+        {
+            cameraActivation = true;
+        }
+        if (cameraActivation == true)
+        {
+            RoomCamera.gameObject.SetActive(cameraActivation);
+        } 
     }
 
-    public void BuildRoom (RoomData data)
-    {
-        
-    }
-    
     public void SetRoomActive(bool state)
     {
         gameObject.SetActive(state);
     }
-    
 }

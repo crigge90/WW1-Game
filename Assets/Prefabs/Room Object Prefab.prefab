@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce967fa63b2c45047a855daffc025379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomCamera: {fileID: 1521915072283270}
+  RoomCamera: {fileID: 20963529299051792}
   BackgroundCanvas: {fileID: 1488881944257502}
   cameraActivation: 0
 --- !u!114 &114114706871951536

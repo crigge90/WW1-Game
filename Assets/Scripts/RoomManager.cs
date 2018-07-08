@@ -7,37 +7,18 @@ public class RoomManager : MonoBehaviour {
     public RoomData[] Rooms;
     public Room RoomPrefab;
 
-    Dictionary<string, Room> rooms = new Dictionary<string, Room>();
-
-    public void AddRoom(RoomData roomData)
-    {
-        Room r = GameObject.Instantiate<Room>(RoomPrefab);
-        r.BuildRoom(roomData);
-        r.name = name;
-        rooms.Add ( name, r );
-    }
-
-    void SetActiveRoom(Room r)
-    {
-        foreach (var item in rooms)
-        {
-            item.Value.SetRoomActive(false);
-        }
-
-        r.SetRoomActive(true);
-    }
-   
     void Start ()
     {
-        
         for (int i = 0; i < Rooms.Length; i++)
         {
-            AddRoom;
-        }
-        
-        SetActiveRoom(rooms["Start"]);
-    }
+            var roomArray = Rooms[i].Name;
+            Instantiate<Room>(RoomPrefab);
+            RoomPrefab.data = Rooms[i];
+            RoomPrefab.SetRoomActive(true);
 
+            Debug.Log("Room " + roomArray + " created");
+        }
+    }
 
     void Update ()
     {
