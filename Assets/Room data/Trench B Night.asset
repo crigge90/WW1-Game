@@ -16,4 +16,4 @@ MonoBehaviour:
   neighbours:
   - {fileID: 11400000, guid: b5e48f6f1aa0e714ebcd0bf4649bfd96, type: 2}
   - {fileID: 11400000, guid: 347af296bacda7d469983a8868a2c4a9, type: 2}
-  isStartingRoom: 1
+  isStartingRoom: 0

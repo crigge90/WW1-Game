@@ -7,25 +7,32 @@ public class Room : MonoBehaviour {
 
     [SerializeField]
     Camera RoomCamera;
+    public GameObject BackgroundCanvas;
+    Image image;
+    Text text;
 
-    
-    public bool cameraActivation = false;
     public RoomData data;
+    public bool isStartingRoom = false;
+    
 
 	void Start ()
     {
-        if (data.isStartingRoom == true)
+        //Room is built here
+        //Components of the room is set to not active by defult
+        RoomCamera.gameObject.SetActive(false);
+        image = BackgroundCanvas.GetComponentInChildren<Image>();
+        image.sprite = data.background;
+        text = BackgroundCanvas.GetComponentInChildren<Text>();
+        text.text = data.Name;
+        BackgroundCanvas.gameObject.SetActive(false);
+        
+        //Checks if this room is starting room
+        isStartingRoom = data.isStartingRoom;
+        //Sets components active if it is starting room
+        if (isStartingRoom == true)
         {
-            cameraActivation = true;
+            RoomCamera.gameObject.SetActive(true);
+            BackgroundCanvas.gameObject.SetActive(true);
         }
-        if (cameraActivation == true)
-        {
-            RoomCamera.gameObject.SetActive(cameraActivation);
-        } 
-    }
-
-    public void SetRoomActive(bool state)
-    {
-        gameObject.SetActive(state);
     }
 }

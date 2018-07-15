@@ -14,7 +14,7 @@ public class RoomManager : MonoBehaviour {
             var roomArray = Rooms[i].Name;
             Instantiate<Room>(RoomPrefab);
             RoomPrefab.data = Rooms[i];
-            RoomPrefab.SetRoomActive(true);
+            
 
             Debug.Log("Room " + roomArray + " created");
         }
