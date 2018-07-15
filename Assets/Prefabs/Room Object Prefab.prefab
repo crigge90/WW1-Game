@@ -105,7 +105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1432546923889872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.364056, y: 1212.0792, z: -3603.7222}
+  m_LocalPosition: {x: -32.067417, y: 1048.1129, z: -3174.7065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4834477645546530}
@@ -182,7 +182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomCamera: {fileID: 20963529299051792}
   BackgroundCanvas: {fileID: 1488881944257502}
-  RoomBackground: {fileID: 0}
   data: {fileID: 11400000, guid: a2a3bf2c4167e3c418f1e669d96f366d, type: 2}
   isStartingRoom: 0
 --- !u!114 &114114706871951536
@@ -384,8 +383,8 @@ RectTransform:
   m_Father: {fileID: 224050345813382382}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 300}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 0, y: 300}
+  m_Pivot: {x: 0.5, y: 1}

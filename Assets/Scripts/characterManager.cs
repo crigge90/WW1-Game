@@ -7,27 +7,17 @@ public class CharacterManager : MonoBehaviour {
 
     public int health;
     public string healthStatus;
-    public enum Nationality {british, french, belgian, german, austrohungarian, italian}
-    public enum Trauma {bulletTorso, bulletLeg, bulletArm, shrapnelTorso, shrapnelLeg, shrapnelArm, infectionTorso, infectionLeg, infectionArm}
-    Trauma trauma;
-    public Sprite AvatarSoldierBritish;
-    public Sprite AvatarSoldierFrench;
-    public Sprite AvatarSoldierBelgian;
-    public Sprite AvatarSoldierGerman;
-    public Sprite AvatarSoldierAustrohungarian;
-    public Sprite AvatarSoldierItalian;
+    public CharacterData playerData;
+    public CharacterData.Nation playerNationality;
+    public CharacterData.Trauma playerTrauma;
+    public CharacterData.Demonym playerDemonym;
+    public Sprite[] playerAvatarList;
+    public int avatarResult;
+    public Sprite playerAvatarContainer;
 
-    public Nationality PlayerNationality
-    {
-        get; set;
-    }
-
-    public Trauma PlayerTrauma
-    {
-        get; set;
-    }
     public void Health ()
     {
+
         if (health == 100)
         {
             healthStatus = "Healthy";
@@ -48,12 +38,11 @@ public class CharacterManager : MonoBehaviour {
 
 	void Awake ()
     {
-
-        int nationalityResult = UnityEngine.Random.Range(0, (int)Enum.GetValues(typeof(Nationality)).Length);
-        Debug.Log(nationalityResult);
-        PlayerNationality = (Nationality)nationalityResult;
-        int traumaResult = UnityEngine.Random.Range(0, (int)Enum.GetValues(typeof(Trauma)).Length);
-        PlayerTrauma = (Trauma)traumaResult;
+        playerNationality = (CharacterData.Nation)UnityEngine.Random.Range(0, Enum.GetValues(typeof(CharacterData.Nation)).Length - 1);
+        playerDemonym = (CharacterData.Demonym)playerNationality;
+        avatarResult = (int)playerNationality;
+        playerAvatarContainer = playerAvatarList[avatarResult];
+        playerTrauma = (CharacterData.Trauma)UnityEngine.Random.Range(1, Enum.GetValues(typeof(CharacterData.Trauma)).Length);
         health = 49;
         Health();
 	}

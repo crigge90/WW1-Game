@@ -17,7 +17,7 @@ public class Room : MonoBehaviour {
 
 	void Start ()
     {
-        //Room is built here
+        //The room is built here
         //Components of the room is set to not active by defult
         RoomCamera.gameObject.SetActive(false);
         image = BackgroundCanvas.GetComponentInChildren<Image>();

@@ -241,7 +241,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 252864a68ff68f346a845decda74efe9, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1031,18 +1031,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   healthStatus: 
-  AvatarSoldierBritish: {fileID: 21300000, guid: 252864a68ff68f346a845decda74efe9,
-    type: 3}
-  AvatarSoldierFrench: {fileID: 21300000, guid: d3790fbfe81ccfc4a9edbb4542d8c506,
-    type: 3}
-  AvatarSoldierBelgian: {fileID: 21300000, guid: 1760253cb7afb99489148aee7b1ca769,
-    type: 3}
-  AvatarSoldierGerman: {fileID: 21300000, guid: a30a719c754f3284bb5dad84cdf1bd2c,
-    type: 3}
-  AvatarSoldierAustrohungarian: {fileID: 21300000, guid: 9c1ebd607b8ede1478bec73ba9bc3ecf,
-    type: 3}
-  AvatarSoldierItalian: {fileID: 21300000, guid: 90454c4ede20e4e428dd4e79d306330c,
-    type: 3}
+  playerData: {fileID: 0}
+  playerNationality: 0
+  playerTrauma: 0
+  playerDemonym: 0
+  playerAvatarList:
+  - {fileID: 21300000, guid: 252864a68ff68f346a845decda74efe9, type: 3}
+  - {fileID: 21300000, guid: d3790fbfe81ccfc4a9edbb4542d8c506, type: 3}
+  - {fileID: 21300000, guid: 1760253cb7afb99489148aee7b1ca769, type: 3}
+  - {fileID: 21300000, guid: a30a719c754f3284bb5dad84cdf1bd2c, type: 3}
+  - {fileID: 21300000, guid: 9c1ebd607b8ede1478bec73ba9bc3ecf, type: 3}
+  - {fileID: 21300000, guid: 90454c4ede20e4e428dd4e79d306330c, type: 3}
+  playerAvatarResult: 0
 --- !u!4 &1408502682
 Transform:
   m_ObjectHideFlags: 0
